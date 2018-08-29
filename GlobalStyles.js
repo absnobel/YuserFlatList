@@ -1,5 +1,5 @@
 import { StyleSheet, StatusBar } from "react-native";
-export default styles = StyleSheet.create({
+const styles = StyleSheet.create({
     listItemContainer: {
       paddingTop: 15,
       paddingBottom:5,
@@ -35,3 +35,4 @@ export default styles = StyleSheet.create({
         justifyContent: 'center',
       },
   });
+  export default styles;
