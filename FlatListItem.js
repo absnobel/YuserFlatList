@@ -36,7 +36,7 @@ export default class FlatListItem extends Component {
                <BookmarkBar><BookmarkImage source={require('./assets/img/bookmark.png')}/></BookmarkBar>
                </ActionContainer>
                <View style={styles.textView}>
-                 <Text>
+                 <Text style={styles.actionText}>
                    <BoldAuthor>{tileInfo.author}</BoldAuthor>
                    {tileInfo.body ?
                     <Text>&nbsp;&nbsp;{ tileInfo.body}</Text>
