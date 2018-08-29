@@ -1,5 +1,6 @@
 import { StyleSheet, StatusBar } from "react-native";
-export default styles = StyleSheet.create({
+import { black, yellow } from "ansi-colors";
+const styles = StyleSheet.create({
     listItemContainer: {
       paddingTop: 15,
       paddingBottom:5,
@@ -13,19 +14,22 @@ export default styles = StyleSheet.create({
       
     },
     actionText:{
-      paddingLeft: 10
+      paddingLeft: 10,
+      color:'yellow'
     },
     appContainer: {
-        paddingTop:StatusBar.currentHeight ? StatusBar.currentHeight : 25
+        paddingTop:StatusBar.currentHeight ? StatusBar.currentHeight : 5, 
+        backgroundColor:'black'
+        
       },
       imgContainer:{
         
         justifyContent: 'center',
         alignItems: 'center',
-       height:40 
+       height:90 
       },
       img:{
-        width:45,
+        width:200,
         flex:1
       },
       container: {
@@ -34,4 +38,28 @@ export default styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
       },
+      pickerTitle: {
+        
+        textAlign: 'left',
+        color:'yellow'
+      },
+      loaderContainer: {
+        flex: 1,
+        justifyContent: 'center'
+      },
+      loaderHorizontal: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: 10
+      },
+      marqueeContainer:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+      },
+      themeContainer:{
+        backgroundColor:'black',
+        flex:1
+      }
   });
+  export default styles;
